@@ -16,6 +16,7 @@ spec:
   selector:
     matchLabels:
       {{- include "tempo.compactorSelectorLabels" . | nindent 6 }}
+  serviceName: compactor
   strategy:
     rollingUpdate:
       maxSurge: 0
