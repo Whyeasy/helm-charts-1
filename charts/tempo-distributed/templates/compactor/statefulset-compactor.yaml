@@ -10,7 +10,6 @@ metadata:
     {{ toYaml . | indent 4 }}
   {{- end }}
 spec:
-  minReadySeconds: 10
   replicas: {{ .Values.compactor.replicas }}
   revisionHistoryLimit: 10
   selector:
